@@ -6,10 +6,10 @@ This gem was ported from the php-emoji library: [php-emoji](https://github.com/i
 	gem install rails-emoji
 
 ## Usage
-	_TO DO_
+*TO DO*
 
 ## Notes
-	The conversion tables are currently static, not auto-generated as in php-emoji.
+The conversion tables are currently static, not auto-generated as in php-emoji.
 
 ---
 ##Credit
