@@ -9,11 +9,11 @@ Gem::Specification.new do |s|
   s.version     = RailsEmoji::VERSION
   s.authors     = ["Owen Lawson"]
   s.email       = ["owen@uken.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/uken/rails-emoji"
   s.summary     = "An Emoji conversion library for Rails"
   s.description = "Allows conversion between various Emoji sets, plus support for HTML."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["Rakefile", "README.markdown"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.3"
