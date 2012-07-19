@@ -2053,16 +2053,16 @@ module RailsEmoji
   # functions to convert incoming data into the unified format
   #
 
-  def emoji_docomo_to_unified( text)
+  def emoji_docomo_to_unified(text)
     emoji_convert(text, 'docomo_to_unified')
   end
-  def emoji_kddi_to_unified(   text)
+  def emoji_kddi_to_unified(text)
     emoji_convert(text, 'kddi_to_unified')
   end
-  def emoji_softbank_to_unified( text)
+  def emoji_softbank_to_unified(text)
     emoji_convert(text, 'softbank_to_unified')
   end
-  def emoji_google_to_unified( text)
+  def emoji_google_to_unified(text)
     emoji_convert(text, 'google_to_unified')
   end
 
@@ -2071,22 +2071,22 @@ module RailsEmoji
   # functions to convert unified data into an outgoing format
   #
 
-  def emoji_unified_to_docomo( text)
+  def emoji_unified_to_docomo(text)
     emoji_convert(text, 'unified_to_docomo')
   end
-  def emoji_unified_to_kddi(   text)
+  def emoji_unified_to_kddi(text)
     emoji_convert(text, 'unified_to_kddi')
   end
-  def emoji_unified_to_softbank( text)
+  def emoji_unified_to_softbank(text)
     emoji_convert(text, 'unified_to_softbank')
   end
-  def emoji_unified_to_google( text)
+  def emoji_unified_to_google(text)
     emoji_convert(text, 'unified_to_google')
   end
-  def emoji_unified_to_html(   text)
+  def emoji_unified_to_html(text)
     emoji_convert(text, 'unified_to_html')
   end
-  def emoji_html_to_unified(   text)
+  def emoji_html_to_unified(text)
     emoji_convert(text, 'html_to_unified')
   end
 
@@ -2094,7 +2094,11 @@ module RailsEmoji
 
   def emoji_convert(text, char_map)
     ret_str = text
-    EMOJI_MAPS[char_map].each { |k, v| ret_str.gsub!(k, v) }
+    EMOJI_MAPS[char_map].each do |k, v|
+      k = k.unpack('U*').pack('U*')
+      v = v.unpack('U*').pack('U*')
+      ret_str.gsub!(k, v)
+    end
     ret_str
   end
 
