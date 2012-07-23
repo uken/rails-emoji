@@ -2094,10 +2094,12 @@ module RailsEmoji
 
   def emoji_convert(text, char_map)
     ret_str = text
-    EMOJI_MAPS[char_map].each do |k, v|
-      k = k.unpack('U*').pack('U*')
-      v = v.unpack('U*').pack('U*')
-      ret_str.gsub!(k, v)
+    if text.present? and char_map.present?
+      EMOJI_MAPS[char_map].each do |k, v|
+        k = k.unpack('U*').pack('U*')
+        v = v.unpack('U*').pack('U*')
+        ret_str.gsub!(k, v)
+      end
     end
     ret_str
   end
