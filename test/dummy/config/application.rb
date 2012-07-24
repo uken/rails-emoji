@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require
-require "rails-emoji"
+require "rails_emoji"
 
 module Dummy
   class Application < Rails::Application

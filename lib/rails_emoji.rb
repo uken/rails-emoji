@@ -1,4 +1,4 @@
-require "rails-emoji/engine"
+require "rails_emoji/engine"
 
 module RailsEmoji
 
