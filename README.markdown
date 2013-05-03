@@ -11,6 +11,12 @@ This gem was ported from the php-emoji library: [php-emoji](https://github.com/i
 ## Notes
 The conversion tables are currently static, not auto-generated as in php-emoji.
 
+## Changelog
+
+### FUTURE
+
+- Rails 4 support
+
 ---
 ##Credit
 [php-emoji](https://github.com/iamcal/php-emoji) by Cal Henderson
