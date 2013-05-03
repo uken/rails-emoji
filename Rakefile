@@ -1,4 +1,6 @@
 #!/usr/bin/env rake
+require 'appraisal'
+
 begin
   require 'bundler/setup'
 rescue LoadError
