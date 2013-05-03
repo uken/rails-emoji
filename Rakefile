@@ -1,6 +1,7 @@
 #!/usr/bin/env rake
 require 'stickler'
 require 'stickler/client'
+require 'appraisal'
 
 begin
   require 'bundler/setup'
