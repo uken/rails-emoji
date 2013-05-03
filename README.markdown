@@ -13,9 +13,9 @@ The conversion tables are currently static, not auto-generated as in php-emoji.
 
 ## Changelog
 
-### FUTURE
+### 1.1.0 (May 14, 2013)
 
-- Rails 4 support
+- Rails 4 support; testing on both Rails 3 and Rails 4
 
 ---
 ##Credit
