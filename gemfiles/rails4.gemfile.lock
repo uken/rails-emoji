@@ -31,7 +31,6 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    addressable (2.3.4)
     appraisal (0.5.2)
       bundler
       rake
@@ -39,16 +38,11 @@ GEM
     atomic (1.1.8)
     builder (3.1.4)
     erubis (2.7.0)
-    excon (0.20.1)
     hike (1.2.2)
     i18n (0.6.4)
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    little-plugger (1.1.3)
-    logging (1.8.1)
-      little-plugger (>= 1.1.3)
-      multi_json (>= 1.3.6)
     mail (2.5.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -58,8 +52,6 @@ GEM
     multi_json (1.7.2)
     polyglot (0.3.3)
     rack (1.5.2)
-    rack-protection (1.5.0)
-      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.0.rc1)
@@ -76,10 +68,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.0.4)
-    sinatra (1.3.6)
-      rack (~> 1.4)
-      rack-protection (~> 1.3)
-      tilt (~> 1.3, >= 1.3.3)
     sprockets (2.9.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -90,12 +78,6 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     sqlite3 (1.3.7)
-    stickler (2.3.0)
-      addressable (~> 2.3.3)
-      excon (~> 0.20.0)
-      logging (~> 1.8.1)
-      sinatra (~> 1.3.5)
-      trollop (~> 2.0)
     thor (0.18.1)
     thread_safe (0.1.0)
       atomic
@@ -103,7 +85,6 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    trollop (2.0)
     tzinfo (0.3.37)
 
 PLATFORMS
@@ -115,4 +96,3 @@ DEPENDENCIES
   rails (= 4.0.0.rc1)
   rails-emoji!
   sqlite3
-  stickler
